@@ -13,3 +13,17 @@ class Account(models.Model):
     job=models.CharField(max_length=50 ,default='none')
     def __str__(self):
         return self.name
+
+class ClintOrder(models.Model):
+    cus_name=models.CharField(max_length=255)
+    cus_phone=models.CharField(max_length=255)
+    tech_phone=models.CharField(max_length=255)
+    o_desc=models.CharField(max_length=255)
+    o_date=models.CharField(max_length=255)
+    tech_name=models.CharField(max_length=255)
+    o_status=models.CharField(max_length=255)
+    o_excute_date=models.CharField(max_length=255)
+    o_governorate=models.CharField(max_length=255)
+    o_region=models.CharField(max_length=255)
+
+
